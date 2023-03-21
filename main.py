@@ -7,16 +7,17 @@ class Teachers:
     """
     Teachers class for name, age, subject:math,english,ect.
     """
-    def __init__(self, name, subject):
+    def __init__(self, name, age=25, subject="English"):
         self.name = name
+        self.age = age
         self.subject = subject
-
     def introduce(self):
         """
         Return person name,age,subject
         """
-        return f"Hi, my name is {self.name} and  I teach {self.subject}."
+        return f"Hi, my name is {self.name} and I am {self.age}. I teach {self.subject}."
 if __name__== "__main__":
-    john = Teachers("John Doe", subject)
-    print(john.name)
+    john = Teachers("John Doe")
     print(john.introduce())
+    jane = Teachers("Jane Doe", 28, subject= "Math")
+    print(jane.introduce())
