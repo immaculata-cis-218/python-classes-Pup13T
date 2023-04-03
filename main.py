@@ -1,5 +1,5 @@
 """
-Create a Class for week 8 through week 10
+Create a Class for week 8:Create Class, week 9:subclasses, week 10:Dunder finish project
 By Joe Davis
 """
 
