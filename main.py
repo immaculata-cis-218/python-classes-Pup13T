@@ -26,14 +26,11 @@ class Teachers:
 
     def __eq__(self, other):
         """
-        Age and Name are same
+        Check if two Teachers objects are equal by comparing their age and name
         """
-        if self is other:
-            return True
-        elif type(self) != type(other):
+        if not isinstance(other, Teachers):
             return False
-        else:
-            return self.age == other.age and self.name == other.name
+        return self.age == other.age and self.name == other.name
 
     def __lt__(self, other):
         """
@@ -114,3 +111,8 @@ if __name__== "__main__":
 
     sarah = Salaryrate("Sarah Scott", age=33, subject="Science", salary=70000)
     print(sarah.introduce())
+
+    if sarah > patrick:
+        print("Sarah is older than Patrick")
+    else:
+        print("Patrick is older than Sarah")
