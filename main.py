@@ -3,7 +3,6 @@ Create a Class for week 8:Create Class, week 9:subclasses, week 10:Dunder finish
 By Joe Davis
 """
 
-
 class Teachers:
     """
     Teachers class for name, age, subject:math,english,ect.
