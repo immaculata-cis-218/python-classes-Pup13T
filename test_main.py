@@ -15,6 +15,44 @@ def test_teachers():
     introduce = test_teachers2.introduce()
     assert "Jane Doe" in introduce
 
+def test_repr():
+    """
+    Test repr function
+    """
+    test_teachers1 = Teachers("John Doe", 25, "English")
+    assert repr(test_teachers1) == "Teacher(name='John Doe', age=25, subject='English')"
+
+def test_str():
+    """
+    Test str function
+    """
+    test_teachers1 = Teachers("John Doe", 25, "English")
+    assert str(test_teachers1) == "John Doe English teacher."
+
+def test_eq():
+    """
+    Test equal function
+    """
+    test_teacher1 = Teachers("John Doe", 25, "English")
+    test_teacher2 = Teachers("John Doe", 25, "English")
+    assert test_teacher1 == test_teacher2
+
+def test_lt():
+    """
+    Test less than function
+    """
+    test_teacher1 = Teachers("John Doe", 25, "English")
+    test_teacher2 = Teachers("Jane Doe", 28, "Math")
+    assert test_teacher1 < test_teacher2
+
+def test_gt():
+    """
+    Test greater than function
+    """
+    test_teacher1 = Teachers("John Doe", 25, "English")
+    test_teacher2 = Teachers("Jane Doe", 28, "Math")
+    assert test_teacher2 > test_teacher1
+
 def test_hightenure():
     """
     Test high tenure
